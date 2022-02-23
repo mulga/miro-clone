@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* -------- */
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 520px 520px;
+}
+
+h1 {
+  grid-column: span 5;
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 3em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.title {
+  font-size: 1.2em;
+}
+
+.text {
+  font-size: 1.4em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.design {
+  background-color: #ffd02e;
+  grid-column: span 3;
+  position: relative;
+}
+
+.design_image {
+  background-image: url("https://static-website.miro.com/static/images/page/mr-index/index-experiment/roxanne_mustafa.png");
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -50px;
+}
+
+.design .title {
+  margin-left: auto;
+}
+
+.design p {
+  width: 80%;
+}
+
+.logo {
+  margin-bottom: 0em;
+}
+
+.user_experience {
+  background-color: #ff6575;
+  padding: 2em;
+  color: #fff;
+
+  grid-column: span 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product {
+  background-color: #4054d9;
+  color: #fff;
+
+  grid-column: span 2;
+}
+
+.strategy_design {
+  background-color: #070038;
+  color: #fff;
+  grid-column: span 3;
+  position: relative;
+}
+
+.strategy_image {
+  background-image: url("https://static-website.miro.com/static/images/page/mr-index/index-experiment/laura_baird.png");
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 60px;
+}
+
+.strategy_design .text {
+  width: 70%;
+}
+
+span {
+  font-weight: 700;
+}
